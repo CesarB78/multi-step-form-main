@@ -15,6 +15,15 @@ body{
 
 }
 
+@media(max-width : 1000px){
+    body{
+        position: relative;
+    }
+    footer{
+        display: none;
+    }
+}
+
 @media(max-width : 375px){
     body{
         position: relative;

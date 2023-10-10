@@ -17,6 +17,14 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+@media (max-width: 1000px) {
+  body {
+    position: relative;
+  }
+  footer {
+    display: none;
+  }
+}
 @media (max-width: 375px) {
   body {
     position: relative;
@@ -255,8 +263,7 @@ body {
     height: 100%;
   }
   .container-info .info-personal .form-info-personal .form-button {
-    position: relative;
-    margin-top: 115px;
+    margin-bottom: 23px;
   }
   .container-info .info-personal .form-info-personal .form-button .btn-next:hover {
     background-color: hsl(213, 96%, 28%);
@@ -320,8 +327,7 @@ body {
     height: 100%;
   }
   .container-info .info-personal .form-info-personal .form-button {
-    position: relative;
-    margin-top: 115px;
+    margin-bottom: 23px;
   }
   .container-info .info-personal .form-info-personal .form-button .btn-next:hover {
     background-color: hsl(213, 96%, 28%);
@@ -502,7 +508,6 @@ body {
 
 @media (max-width: 1000px) {
   .select-plan {
-    position: absolute;
     width: 92%;
     height: 100%;
     margin-top: 10px;
@@ -772,27 +777,25 @@ body {
 @media (max-width: 1000px) {
   .picks-add {
     width: 92%;
-    height: 90%;
+    height: 100%;
   }
   .picks-add .title-pick-add .title-pick {
     font-size: 20px;
   }
   .picks-add .buttom-pick {
-    position: relative;
-    margin-top: 124px;
+    margin-bottom: 23px;
   }
 }
 @media (max-width: 375px) {
   .picks-add {
     width: 92%;
-    height: 90%;
+    height: 100%;
   }
   .picks-add .title-pick-add .title-pick {
     font-size: 20px;
   }
   .picks-add .buttom-pick {
-    position: relative;
-    margin-top: 124px;
+    margin-bottom: 23px;
   }
 }
 .finish-up {
@@ -964,25 +967,25 @@ body {
 @media (max-width: 1000px) {
   .finish-up {
     width: 92%;
+    height: 100%;
   }
   .finish-up .title-finish-up .title-finish {
     font-size: 20px;
   }
   .finish-up .buttom-finish {
-    position: relative;
-    margin-top: 128px;
+    margin-bottom: 23px;
   }
 }
 @media (max-width: 375px) {
   .finish-up {
     width: 92%;
+    height: 100%;
   }
   .finish-up .title-finish-up .title-finish {
     font-size: 20px;
   }
   .finish-up .buttom-finish {
-    position: relative;
-    margin-top: 128px;
+    margin-bottom: 23px;
   }
 }
 .thank-you {
