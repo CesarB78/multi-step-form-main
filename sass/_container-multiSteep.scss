@@ -1,0 +1,419 @@
+@use 'variables-tipografia';
+
+
+
+    
+    .step-session{
+        background-image: url(/assets/images/bg-sidebar-desktop.svg);
+        width: 400px;
+         height: 93%;
+         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: 15px;
+        
+
+        
+        
+    }
+    .box-step{
+        width: 100%;
+        display: flex;
+        
+        gap: 25px;
+        margin-top: 30px;
+        margin-left: 25px;
+
+        cursor: pointer;
+
+        .circle-one,
+        .circle-two,
+        .circle-three,
+        .circle-four{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: azure;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        .circle-active{
+            background-color: variables-tipografia.$Pastel-blue;
+        }
+
+        .step-title-text{
+            .title-step{
+                color: variables-tipografia.$Cool-gray;
+                font-size: 0.75rem;
+                font-weight: 100;
+            }
+            .text-step{
+                color: variables-tipografia.$White;
+                font-size: 0.75rem;
+                font-weight: 200;
+            }
+        }
+
+    }
+
+
+
+.container-info{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    position: relative;
+    
+
+    .info-personal{
+        width: 65%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        position: absolute;
+        //display: none;
+        
+     
+        .title-info-personal{
+
+            .title-info{
+                color: variables-tipografia.$Marine-blue;
+                margin: 0;
+            }
+            .text-info{
+                color: variables-tipografia.$Cool-gray;
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+        .form-info-personal{
+           margin-top: 15px;
+           height: 100%;
+           position: relative;
+
+           .form-info{
+
+
+            .err-name,
+            .err-email,
+            .err-number,
+            .err-email-test{
+                
+                font-size: 10px;
+                font-weight: 500;
+                color: rgb(203, 4, 4);
+                display: none;
+                justify-content: end;
+                
+            }
+
+            
+           }
+            
+            
+            .form-name,
+            .form-email,
+            .form-number{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+
+                label{
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                    color: variables-tipografia.$Marine-blue-hover;
+                }
+                
+                input{
+                    height: 45px;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    padding-left: 5px;
+                    font-family: sans-serif;
+                    
+                    
+                }
+                :focus{
+                    outline: none;
+                    border: 1px solid rgb(29, 3, 100);
+                }
+                .email-ok{
+                    outline:1px solid rgb(8, 246, 8);
+                }
+            }
+            .form-button{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: end;
+                bottom: 0;
+                position: absolute;
+                
+                
+                .btn-next{
+                    width: 105px;
+                    height: 35px;
+                    padding: 5px;
+                    background-color:variables-tipografia.$Marine-blue;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 0.8125rem;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color:variables-tipografia.$Marine-blue-hover;
+                    }
+                    
+                }
+
+            }
+            
+            
+        }
+    }
+}
+
+
+// media query
+
+@media(max-width : 1000px){
+      
+  
+
+    .step-session{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url(/assets/images/bg-sidebar-mobile.svg);
+        background-size: cover;
+        height: 150px;
+        border-radius: 0;
+        display: flex;
+        margin: 0;
+        width: 100%;
+        z-index: -1;
+        
+        
+        .sidebar-nav{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-left: 40px;
+            margin-right: 40px;
+
+            .box-step{
+                width: 40px;
+                height: 40px;
+                margin-top: 20px;
+            }
+            
+            
+            
+        }
+        
+ 
+    }
+    
+    
+
+
+.step{
+    display: none;
+}
+
+.container-info{
+    width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+margin-top: 25px;
+position: relative;
+    
+
+
+    .info-personal{
+        width: 92%;
+    height: 100%;
+    
+    margin-top: 10px;
+    position: absolute;          
+        
+        
+    
+    
+    
+        
+        .title-info-personal{
+
+            .title-info{
+                color: variables-tipografia.$Marine-blue;
+                margin: 0;
+                font-size: 20px;
+            }
+            .text-info{
+                color: variables-tipografia.$Cool-gray;
+                font-weight: 300;
+                font-size: 10px;
+            }
+        }
+
+        .form-info-personal{
+            height: 100%;
+            
+
+
+            .form-button{
+                position: relative;
+                margin-top: 115px;
+
+                
+                
+                
+                .btn-next{
+                    
+    
+                    &:hover{
+                        background-color:variables-tipografia.$Marine-blue-hover;
+                    }
+                    
+                }
+    
+            }
+        }
+        
+    }
+    
+}
+
+
+   
+}
+
+
+
+
+
+@media(max-width : 375px){
+      
+  
+
+        .step-session{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-image: url(/assets/images/bg-sidebar-mobile.svg);
+            background-size: cover;
+            height: 150px;
+            border-radius: 0;
+            display: flex;
+            margin: 0;
+            width: 100%;
+            z-index: -1;
+            
+            
+            .sidebar-nav{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-left: 40px;
+                margin-right: 40px;
+
+                .box-step{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 20px;
+                }
+                
+                
+                
+            }
+            
+     
+        }
+        
+        
+    
+    
+    .step{
+        display: none;
+    }
+
+    .container-info{
+        width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    position: relative;
+        
+
+
+        .info-personal{
+            width: 92%;
+        height: 100%;
+        
+        margin-top: 10px;
+        position: absolute;          
+            
+            
+        
+        
+        
+            
+            .title-info-personal{
+
+                .title-info{
+                    color: variables-tipografia.$Marine-blue;
+                    margin: 0;
+                    font-size: 20px;
+                }
+                .text-info{
+                    color: variables-tipografia.$Cool-gray;
+                    font-weight: 300;
+                    font-size: 10px;
+                }
+            }
+
+            .form-info-personal{
+                height: 100%;
+                
+
+
+                .form-button{
+                    position: relative;
+                    margin-top: 115px;
+
+                    
+                    
+                    
+                    .btn-next{
+                        
+        
+                        &:hover{
+                            background-color:variables-tipografia.$Marine-blue-hover;
+                        }
+                        
+                    }
+        
+                }
+            }
+            
+        }
+        
+    }
+    
+    
+       
+}

@@ -1,0 +1,60 @@
+@use 'variables-tipografia';
+
+.main-container{
+    display: flex;
+    width: 55%;
+    height: 480px;
+    
+    background-color: variables-tipografia.$White;
+    border-radius: 15px;
+
+
+   
+
+}
+
+//media query
+
+@media(max-width : 375px){
+
+  
+        
+    .main-container{
+        width: 345px;
+        height: 80%;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 33px;
+        
+        
+        
+        
+        
+    }
+    
+}
+
+
+@media(max-width : 1000px){
+
+  
+        
+    .main-container{
+        width: 345px;
+        height: 80%;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        
+        
+        
+        
+        
+    }
+    
+}
+

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+</head>
+<body>
+  <div class="main-container">
+
+      
+        <div class="step-session">
+          <!-- Sidebar start -->
+          <div class="sidebar-nav">
+
+          
+          <div class="box-step" id="box-step-one">
+            
+            <div class="circle-one circle-active">
+              <p class="number-circle-step">
+                1
+              </p>
+            </div>
+            <div class="step step-title-text">
+              <h3 class="title-step">
+                STEP 1
+              </h3>
+              <h4 class="text-step">
+                YOUR INFO
+              </h4>
+
+            </div>
+            
+          </div>
+
+          <div class="box-step" id="box-step-two">
+            <div class="circle-two">
+              <p class="number-circle-step">
+                2
+              </p>
+            </div>
+            <div class="step step-title-text">
+              <h3 class="title-step">
+                STEP 2
+              </h3>
+              <h4 class="text-step">
+                SELECT PLAN
+              </h4>
+
+            </div>
+            
+          </div>
+
+          <div class="box-step" id="box-step-three">
+            <div class="circle-three">
+              <p class="number-circle-step">
+                3
+              </p>
+            </div>
+            <div class="step step-title-text">
+              <h3 class="title-step">
+                STEP 3
+              </h3>
+              <h4 class="text-step">
+                ADD-ONS
+              </h4>
+
+            </div>
+            
+          </div>
+
+          <div class="box-step" id="box-step-four">
+            <div class="circle-four">
+              <p class="number-circle-step">
+                4
+              </p>
+            </div>
+            <div class="step step-title-text">
+              <h3 class="title-step">
+                STEP 
+              </h3>
+              <h4 class="text-step">
+                SUMMARY
+              </h4>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+          <!-- Sidebar end -->
+      
+      
+       <!-- Step 2 start -->
+    
+       <!-- Step 1 info personal -->
+      <div class="container-info">
+
+      <div class="info-personal">
+        <div class="title-info-personal">
+          <h1 class="title-info">
+            Personal info
+          </h1>
+          <p class="text-info">
+            Please provide your name, email address, and phone number.
+          </p>
+        </div>
+
+        <form class="form-info-personal">
+          <div class="form-info form-name">
+            <label for="" name="name">Name</label>
+            <input type="text" name="name" placeholder="Vanessa Mint" id="input-name">
+            <p class="err-name">Este Campo es requerido</p>
+          </div>
+
+          <div class="form-info form-email">
+            <label for="" name="email">Email Address</label>
+            <input type="email" name="email" placeholder="vanessamint@correo.com" id="input-email" class="">
+            <p class="err-email">Este Campo es requerido</p>
+            <p class="err-email-test">Correo invalido</p>
+          </div>
+
+          <div class="form-info form-number">
+            <label for="" name="number">Phone Number</label>
+            <input type="text" placeholder="e.g +1 234 567 890" id="input-number">
+            <p class="err-number">Este Campo es requerido</p>
+          </div>
+
+          <div class="form-button">
+            <input class="btn-next" type="submit" value="Next Step" id="btn-personal-info">
+          </div>
+          <!-- end form info personal -->
+        </form>
+        
+      </div>
+     
+
+    
+
+      <!-- page select plan -->
+      <div class="select-plan">
+
+        <div class="title-selec-plan">
+          <h1 class="title-plan">
+            Select your Plan
+          </h1>
+          <p class="text-plan">
+            You have the option of monthly or yearly billing.
+          </p>
+        </div>
+
+        <div class="box-tipo-plan">
+          <div tabindex="0" class="box box-one" id="box-arcade">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <div class="text-box-plan">
+              <h3 class="tipo_plan">Arcade</h3>
+              <div class="price_plan">
+                <span>$</span>
+                <p class="price" id="price-arcade">9</p>
+                <p class="period" id="per-arcade">/mo</p>
+              </div>
+            
+            <div class="yearly_arcade">
+              <p>2 months free</p>
+            </div>
+            </div>
+            
+          </div>
+          
+          <div tabindex="0" class="box box-two" id="box-advanced">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <div class="text-box-plan">
+              <h3 class="tipo_plan">Advanced</h3>
+              <div class="price_plan">
+                <span>$</span>
+                <p class="price" id="price-advanced">12</p>
+                <p class="period" id="per-advanced">/mo</p>
+              </div>
+              <div class="yearly_advanced">
+                <p>2 months free</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div tabindex="0" class="box box-three" id="box">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <div class="text-box-plan">
+              <h3 class="tipo_plan">Pro</h3>
+              <div class="price_plan">
+                <span>$</span>
+                <p class="price" id="price-pro">15</p>
+                <p class="period" id="per-pro">/mo</p>
+              </div>
+            <div class="yearly_pro">
+              <p>2 months free</p>
+            </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="switch-plan">
+          <p class="text-switch-month">
+            Monthly
+          </p>
+          <div class="switch">
+            <input type="checkbox" id="switch">
+            <label for="switch" class="lbl"></label>
+          </div>
+          <p class="text-switch-year">
+            Yearly
+          </p>
+        </div>
+        <div class="plan-select">
+          <p id="text-plan-select"></p>
+          <p id="plan-select"></p>
+        </div>
+        
+
+        <div class="buttom-plan">
+          <p class="btn-go-back" id="btn-go-back-select">Go Back</p>
+          <input class="btn-next" type="submit" value="Next Step" id="btn-select-plan">
+        </div>
+
+
+        <!-- End Select Plan -->
+      </div>
+
+      <!-- Start Picks and add -->
+      <div class="picks-add">
+
+        <div class="title-pick-add">
+          <h1 class="title-pick">
+            Pick add-ons
+          </h1>
+          <p class="text-pick">
+            Add-ons help enhance your gaming experiencie.
+          </p>
+        </div>
+
+        <div class="ckeck-pick-add">
+
+          <div tabindex="0" class="box-check box-check-online">
+            <div class="check">
+              <input type="checkbox"  value=1  name="Online Service" class="check-online value-checkbox" id="check-online">
+            </div>
+            <div class="title-text-check">
+              <p class="title-check">
+                Online Servive
+              </p>
+              <p class="text-check">
+                Acces to mulptiplayer games
+              </p>
+            </div>
+            <div class="price">
+              <p class="check-price-online text-price">
+                1
+              </p>
+              <p class="text-check check-period-online"></p>
+            </div>
+           
+          </div>
+        
+        
+          <div tabindex="0"  class="box-check box-check-larger">
+            <div class="check">
+              <input type="checkbox" value=2 name="Larger storage" class="check-larger value-checkbox" id="check-larger">
+            </div>
+            <div class="title-text-check">
+              <p class="title-check">
+                Larger storage
+              </p>
+              <p class="text-check">
+                Extra 1TB of cloud save
+              </p>
+            </div>
+            <div class="price">
+              <p class="check-price-larger text-price">
+                2
+              </p>
+              <p class="text-check check-period-larger"></p>
+            </div>
+          </div>
+        
+          <div tabindex="0" class="box-check box-check-custom">
+            <div class="check">
+              <input type="checkbox" value=3 name="Customizable profile" class="check-custom value-checkbox" id="check-custom">
+            </div>
+            <div class="title-text-check">
+              <p class="title-check">
+                Customizable Profile
+              </p>
+              <p class="text-check">
+                Custom theme on your profile
+              </p>
+            </div>
+            <div class="price">
+              <p class="check-price-custom text-price">
+                3
+              </p>
+              <p class="text-check check-period-custom"></p>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="buttom-pick">
+          <p class="btn-go-back" id="btn-go-back-pick">Go Back</p>
+          <input class="btn-next" type="submit" value="Next Step" id="btn-add-ons">
+        </div>
+        <!-- End Picks and add -->
+      </div>
+      <!-- start finish up -->
+      <div class="finish-up">
+
+        <div class="title-finish-up">
+          <h1 class="title-finish">
+            Finish up
+          </h1>
+          <p class="text-finish">
+            Double-check everythings looks OK before confirming.
+          </p>
+        </div>
+
+        <div class="boxes-payments">
+          <div class="box-payment arcade">
+            <div class="title-box-payment">
+              <div class="box-selected-plan">
+                <p class="title-payment" id="plan-selected"></p>
+                <p id="year-selected"></p>
+              </div>
+              <p class="change" id="change">Change</p>                           
+            </div>
+            <div class="total-pay-select-plan">
+              <span>$</span>
+              <p id="total-selected-plan"></p>
+              <p id="period-selected-plan"></p>
+            </div>
+          </div>
+          <hr>
+          <div class="box-payment online-service">
+
+            <div class="text-online">
+              <p id="selected-pick-online"></p>
+              <p class="text-online-storage" id="selected-pick-large"></p>
+              <p id="selected-pick-custom"></p>
+            </div>
+
+            <div class="price-period-selected">
+              <div class="box-price-period-selected">
+                <p id="price-selected-online"></p>
+                <p class="text-price-online" id="price-selected-larger"></p>
+                <p id="price-selected-custom"></p>
+              </div>
+              <div class="month-selected">
+                <p id="month-selected-online"></p>
+                <p id="month-selected-larger"></p>
+                <p id="month-selected-custom"></p>
+              </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+        <div class="box-total-pay">
+
+          <div class="text-total-pay">
+            <p>Total</p>
+            <p id="period-pay">mo</p>
+          </div>
+
+          <div class="price-total-pay">
+            <p id="cost-total-pay"></p>
+            <p id="cost-total-period"></p>
+          </div>
+        </div>
+        <div class="buttom-finish">
+          <p class="btn-go-back" id="btn-go-back-finish">Go Back</p>
+          <input class="btn-next" type="submit" value="Confirm" id="btn-finish">
+        </div>
+        <!-- End Finish UP -->
+      </div>
+
+        <!-- start page thank-you -->
+      <div class="thank-you">
+        <div class="img-thank-you">
+          <img src="./assets/images/icon-thank-you.svg" alt="img thank you">
+        </div>
+        <div class="title-thank-you">
+          <h1>Thank You!</h1>
+        </div>
+        <div class="text-thank-you">
+          <p>Thanks for confirming your subscription! We hope you have fun 
+            using our platform. If you ever need support, please feel free 
+            to email us at support@loremgaming.com.</p>
+        </div>
+        <div class="icon-home">
+          <i class='bx bxs-home' id="icon-home"></i>
+        </div>
+        <!-- end page thank-you -->
+      </div>
+   </div>
+  </div>
+  
+  
+  <footer>
+    <p class="attribution">
+      Coded by
+            <a href="https://github.com/CesarB78" target="_blank"><strong>Cesar Augusto Botina</strong></a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

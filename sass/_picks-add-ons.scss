@@ -1,0 +1,229 @@
+@use 'variables-tipografia';
+
+.picks-add{
+
+        position: absolute;
+        width: 65%;
+        height: 90%;
+        display: flex;
+        margin-top: 10px;
+        flex-direction: column;
+        margin-top: 10px;
+        display: none;
+        
+        
+        .title-pick-add{
+
+            .title-pick{
+                color: variables-tipografia.$Marine-blue;
+                margin: 0;
+            }
+            .text-pick{
+                color: variables-tipografia.$Cool-gray;
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+
+        .ckeck-pick-add{
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+           
+            
+
+
+
+            .box-check{
+                
+                width: 100%;
+                height: 60px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                 cursor: pointer;
+
+                 &:hover{
+                     border :1px solid  variables-tipografia.$Marine-blue;
+                     background-color: variables-tipografia.$Alabaster;
+                 }
+               
+
+                .check{
+                    margin-left: 10px;
+                }
+
+                .title-text-check{
+                    margin-left: 10px;
+                    
+
+                    .title-check{
+                        font-size: 14px;
+                        font-weight: 700;
+                        color : variables-tipografia.$Marine-blue;
+                    }
+                    .text-check{
+                        font-size: 11px;
+                        color: variables-tipografia.$Cool-gray;
+                    }
+                }
+                
+                .price{
+                    position: absolute;
+                    right: 0;
+                    margin-right: 10px;
+                    display: flex;
+
+                    .text-price{
+                        font-size: 10px;
+                        color: variables-tipografia.$Purplish-blue;
+                        font-weight: 600;
+                    }
+                    .text-check{
+                        font-size: 10px;
+                        color: variables-tipografia.$Purplish-blue;
+                        font-weight: 600;
+                    }
+                }
+                
+            }
+
+            .online-service{
+                background-color: variables-tipografia.$Magnolia;
+                border :1px solid  variables-tipografia.$Marine-blue;
+             
+            }
+            .larger-storage{
+                background-color: variables-tipografia.$Magnolia;
+                border :1px solid  variables-tipografia.$Marine-blue;
+            }
+            .customizable-profile{
+                background-color: variables-tipografia.$Magnolia;
+                border :1px solid  variables-tipografia.$Marine-blue;
+            }
+
+           
+
+            
+        }
+        
+        
+
+
+        .buttom-pick{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            bottom: 0;
+            position: absolute;
+            
+            
+            .btn-next{
+                width: 105px;
+                height: 35px;
+                padding: 5px;
+                background-color:variables-tipografia.$Marine-blue;
+                font-size: 15px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 0.8125rem;
+                cursor: pointer;
+
+                &:hover{
+                    background-color:variables-tipografia.$Marine-blue-hover;
+                }
+                
+            }
+            .btn-go-back{
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+                color:variables-tipografia.$Cool-gray;
+            }
+            
+            
+            .btn-go-back:hover{
+                color:variables-tipografia.$Marine-blue;
+            }
+
+        }
+
+       
+
+
+}
+
+@media(max-width : 1000px){
+    .picks-add{
+
+        
+        width: 92%;
+        height: 90%;
+        
+        .title-pick-add{
+
+            .title-pick{
+                
+                font-size: 20px;
+            }
+            
+        }
+        
+
+
+        .buttom-pick{
+            position: relative;
+            margin-top: 124px;
+            
+            
+            
+            
+        }
+
+       
+
+
+}
+
+}
+
+
+@media(max-width : 375px){
+    .picks-add{
+
+        
+        width: 92%;
+        height: 90%;
+        
+        .title-pick-add{
+
+            .title-pick{
+                
+                font-size: 20px;
+            }
+            
+        }
+        
+
+
+        .buttom-pick{
+            position: relative;
+            margin-top: 124px;
+            
+            
+            
+            
+        }
+
+       
+
+
+}
+
+}

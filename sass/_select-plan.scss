@@ -1,0 +1,451 @@
+@use 'variables-tipografia';
+
+
+.select-plan{
+        position: absolute;
+        width: 65%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        display: none;
+
+        .title-selec-plan{
+
+            .title-plan{
+                color: variables-tipografia.$Marine-blue;
+                margin: 0;
+            }
+            .text-plan{
+                color: variables-tipografia.$Cool-gray;
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+        
+
+        .box-tipo-plan{
+            width: 100%;
+            height: 125px;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+
+            
+
+            .box{
+                width: 100px;
+                height: 100%;
+                border: 1px solid variables-tipografia.$Cool-gray;
+                margin: 0 auto;
+                border-radius: 5px;
+                cursor: pointer;
+                padding-left: 10px;
+                padding-top: 10px;
+                
+
+                &:hover{
+                    border: 1px solid variables-tipografia.$Marine-blue;
+                    background-color:variables-tipografia.$Alabaster;
+
+                   
+                }
+                &:focus{
+                    background-color:variables-tipografia.$Magnolia;
+                    border: 1px solid variables-tipografia.$Marine-blue;
+                }
+                
+               
+
+                img{
+                    width: 30px;
+                    
+                }
+                .text-box-plan{
+                    margin-top: 30px;
+                    h3{
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    p,span{
+                        font-size: 13px;
+                        color: gray;
+                    }
+
+                }
+                .price_plan{
+                    display: flex;
+                    gap: 2px;
+                }
+                .yearly_arcade,
+                .yearly_advanced,
+                .yearly_pro{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    display: none;
+                    
+                    
+                    
+                    p{
+                        font-size: 12px;
+                        font-weight: 100;
+                        color:  variables-tipografia.$Marine-blue;
+
+                    }
+                  
+                }
+
+            }
+            .plan-arcade,
+            .plan-advanced,
+            .plan-pro{
+                background-color:variables-tipografia.$Magnolia;
+                border: 1px solid variables-tipografia.$Marine-blue;
+            }
+        }
+
+        .switch-plan{
+
+            .text-switch-month{
+                font-size: 14px;
+                font-weight: 700;
+                
+                
+                
+            }
+            .text-switch-year{
+                font-size: 14px;
+                font-weight: 700;
+                color: variables-tipografia.$Cool-gray;
+            }
+            
+            width: 100%;
+            height: 45px;
+            background-color: variables-tipografia.$Magnolia;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+
+            #switch:checked + .lbl::after{
+                left: 28px;
+              
+              }
+              #switch:checked + .lbl{
+                background: rgb(56, 56, 56);
+              
+              }
+              #switch{
+                display: none;
+              }
+              
+              .lbl{
+                display: inline-block;
+                width: 47px;
+                height: 20px;
+                background-color: #4b4a4ad4;
+                border-radius: 100px;
+                cursor: pointer;
+                margin-top: 3px;
+                position: relative;
+                transition: .2s;
+              }
+
+            .lbl::after{
+                content: "";
+                display: block;
+                width: 17px;
+                height: 16px;
+                background: rgb(252, 255, 255);
+                border-radius: 100px;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                transition: .2s;
+              
+              
+              }
+
+              
+
+              
+        }
+
+        .buttom-plan{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            bottom: 0;
+            position: absolute;
+            
+            
+            .btn-next{
+                width: 105px;
+                height: 35px;
+                background-color:variables-tipografia.$Marine-blue;
+                font-size: 15px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 0.8125rem;
+                cursor: pointer;
+
+                &:hover{
+                    background-color:variables-tipografia.$Marine-blue-hover;
+                }
+                
+            }
+            .btn-go-back{
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+                color:variables-tipografia.$Cool-gray;
+            }
+            .btn-go-back:hover{
+                color:variables-tipografia.$Marine-blue;
+            }
+
+        }
+        
+        .plan-select{
+            width: 100%;
+            margin-top: 5px;
+            display: flex;
+            font-size: 12px;
+            font-weight: 600;
+          }
+}
+
+@media(max-width : 1000px){
+    .select-plan{
+        position: absolute;
+        width: 92%;
+        height: 100%;
+        margin-top: 10px;
+        display: none;
+        
+
+        .title-selec-plan{
+
+            .title-plan{
+                color: variables-tipografia.$Marine-blue;
+                margin: 0;
+                font-size: 20px;
+            }
+            .text-plan{
+                color: variables-tipografia.$Cool-gray;
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+        
+
+        .box-tipo-plan{
+            width: 100%;
+            height: 65%;
+            margin-top: -20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            
+
+            .box{
+                width: 95%;
+                height: 70px;
+                border: 1px solid variables-tipografia.$Cool-gray;
+                margin: 0 auto;
+                border-radius: 5px;
+                cursor: pointer;
+                padding-left: 10px;
+                padding-top: 10px;
+                display: flex;
+                gap: 10px;
+                
+
+                &:focus{
+                    background-color:variables-tipografia.$Magnolia;
+                    border: 1px solid variables-tipografia.$Marine-blue;
+                }
+                
+               
+
+                img{
+                    width: 30px;
+                    
+                }
+                .text-box-plan{
+                    margin-top: 5px;
+
+                }
+                .price_plan{
+                    display: flex;
+                    gap: 2px;
+                }
+                .yearly_arcade,
+                .yearly_advanced,
+                .yearly_pro{
+                    margin: 0;
+                    
+                    
+                    p{
+                        
+                        font-weight: 100;
+                        
+                    }
+                  
+                }
+
+            }
+            .plan-arcade,
+            .plan-advanced,
+            .plan-pro{
+                background-color:variables-tipografia.$Magnolia;
+                border: 1px solid variables-tipografia.$Marine-blue;
+            }
+        }
+
+        .switch-plan{
+
+            
+            margin-top: -20px;
+            border-radius: 10px;
+
+              
+        }
+
+        .buttom-plan{
+                
+                margin-bottom: 23px;
+            
+         
+            
+
+        }
+        
+        
+}
+
+}
+
+
+
+
+@media(max-width : 375px){
+    .select-plan{
+        position: absolute;
+        width: 92%;
+        height: 100%;
+        margin-top: 10px;
+        display: none;
+        
+
+        .title-selec-plan{
+
+            .title-plan{
+                color: variables-tipografia.$Marine-blue;
+                margin: 0;
+                font-size: 20px;
+            }
+            .text-plan{
+                color: variables-tipografia.$Cool-gray;
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+        
+
+        .box-tipo-plan{
+            width: 100%;
+            height: 65%;
+            margin-top: -20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            
+
+            .box{
+                width: 95%;
+                height: 70px;
+                border: 1px solid variables-tipografia.$Cool-gray;
+                margin: 0 auto;
+                border-radius: 5px;
+                cursor: pointer;
+                padding-left: 10px;
+                padding-top: 10px;
+                display: flex;
+                gap: 10px;
+                
+
+                &:focus{
+                    background-color:variables-tipografia.$Magnolia;
+                    border: 1px solid variables-tipografia.$Marine-blue;
+                }
+                
+               
+
+                img{
+                    width: 30px;
+                    
+                }
+                .text-box-plan{
+                    margin-top: 5px;
+
+                }
+                .price_plan{
+                    display: flex;
+                    gap: 2px;
+                }
+                .yearly_arcade,
+                .yearly_advanced,
+                .yearly_pro{
+                    margin: 0;
+                    
+                    
+                    p{
+                        
+                        font-weight: 100;
+                        
+                    }
+                  
+                }
+
+            }
+            .plan-arcade,
+            .plan-advanced,
+            .plan-pro{
+                background-color:variables-tipografia.$Magnolia;
+                border: 1px solid variables-tipografia.$Marine-blue;
+            }
+        }
+
+        .switch-plan{
+
+            
+            margin-top: -20px;
+            border-radius: 10px;
+
+              
+        }
+
+        .buttom-plan{
+                
+                margin-bottom: 23px;
+            
+         
+            
+
+        }
+        
+        
+}
+
+}
+
