@@ -186,6 +186,24 @@
             .btn-next{
                 width: 105px;
                 height: 35px;
+                background-color:hsl(213deg 39.61% 53.06%);
+                font-size: 15px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 0.8125rem;
+                cursor: pointer;
+
+                &:hover{
+                    cursor: not-allowed;
+                }
+
+
+                
+            }
+            .btn-next-ok{
+                width: 105px;
+                height: 35px;
                 background-color:variables-tipografia.$Marine-blue;
                 font-size: 15px;
                 color: white;
@@ -197,8 +215,9 @@
                 &:hover{
                     background-color:variables-tipografia.$Marine-blue-hover;
                 }
-                
+            
             }
+
             .btn-go-back{
                 font-size: 15px;
                 font-weight: 700;
@@ -215,8 +234,17 @@
             width: 100%;
             margin-top: 5px;
             display: flex;
+            justify-content: center;
             font-size: 12px;
             font-weight: 600;
+            
+
+            #selection-plan{
+                color:red;
+                
+                
+                
+            }
           }
 }
 

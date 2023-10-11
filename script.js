@@ -42,13 +42,16 @@ input_email.addEventListener('keyup',(e)=>{
         err_email.style.display = "none"
 
     }else{
-        err_email_test.style.display = "flex"
+        input_email.className = "email-invalid";
+
+        if(input_email.value === ''){
+            err_email.innerText = "Field is required"
+        }else{
+            
+        }
     }
 
-
-
 })
-
 
 
 input_name.addEventListener('keyup',(e)=>{
@@ -63,6 +66,8 @@ input_number.addEventListener('keyup',(e)=>{
 
 
 
+
+//eventos del boton next desde personal info
 btn_personal_info.addEventListener('click',(e)=>{
     e.preventDefault();
     
@@ -72,14 +77,17 @@ btn_personal_info.addEventListener('click',(e)=>{
     err_email.style.display = "flex"
     err_number.style.display = "flex"
     
-   }if(input_name.value === ''){
+    
+    
+    
+   }else if(input_name.value === ''){
      err_name.style.display = "flex"
 
-   }if(input_email.value === ''){   
+   }else if(input_email.value === ''){   
      err_email.style.display = "flex"
     
 
-   }if(input_number.value === ''){
+   }else if(input_number.value === ''){
     err_number.style.display = "flex"
     
 
@@ -89,6 +97,7 @@ btn_personal_info.addEventListener('click',(e)=>{
 
     circle_one.classList.remove("circle-active");
     circle_two.classList.add("circle-active");
+   
 
    }
 
@@ -121,8 +130,10 @@ const text_plan_selected = document.getElementById('text-plan-select')
 const box_one = document.querySelector('.box-one');
 const box_two = document.querySelector('.box-two');
 const box_three = document.querySelector('.box-three');
+const selection_plan = document.getElementById('selection-plan');
+const btn_next_plan = document.querySelector('.btn-next-plan');
 
-
+// eventos del switch desde select plan
 checkBox.addEventListener('click',()=>{
   
     plan_select.innerText = event.target.checked ? '' : ''
@@ -152,7 +163,8 @@ checkBox.addEventListener('click',()=>{
 
     text_plan_selected.checked = event.target.checked ? text_plan_selected.innerText = '' : text_plan_selected.innerText = '';
     
-
+    checkBox.checked ? selection_plan.style.display = "flex":selection_plan.style.display = "flex";
+    checkBox.checked ? btn_select_plan.classList.remove('btn-next-ok') & btn_select_plan.classList.add('btn-next') : btn_select_plan.classList.remove('btn-next-ok') & btn_select_plan.classList.add('btn-next');
 })
 
 
@@ -175,7 +187,6 @@ const total_selected_plan = document.getElementById('total-selected-plan');
 const period_selected_plan = document.getElementById('period-selected-plan');
 const period_pay = document.getElementById('period-pay');
 const cost_total_period = document.getElementById('cost-total-period');
-
 
 
 box_select.forEach((btn_select_plan,i,a) =>{
@@ -213,11 +224,17 @@ box_select.forEach((btn_select_plan,i,a) =>{
             tipoPlan_div === 'Arcade' ? box_one.classList.add('plan-arcade') : box_one.classList.remove('plan-arcade');
             tipoPlan_div === 'Advanced' ? box_two.classList.add('plan-advanced') : box_two.classList.remove('plan-advanced');
             tipoPlan_div === 'Pro' ? box_three.classList.add('plan-pro') : box_three.classList.remove('plan-pro');
-           
+
+            selection_plan.style.display = "none"
+            btn_next_plan.classList.remove('btn-next')
+            btn_next_plan.classList.add('btn-next-ok');
+
+            
 
         
         }
 
+        
         
 })
 
@@ -239,15 +256,16 @@ btn_go_back_select.addEventListener('click',()=>{
 
 
 
-//eventos del boton next ( siguiente pagina)
-
-
+//eventos del boton next ( siguiente pagina) desde select-plan
 
 btn_select_plan.addEventListener('click',()=>{
     
     if(plan_select.innerText === ''){
-        alert("Por favor seleccionar un plan")
+        selection_plan.innerText = "Debes seleccionar un plan!!...."
+        
+      
     }else {
+        
         select_plan.style.display = "none";
         page_picks_add.style.display = "flex"
     
